@@ -1,7 +1,6 @@
 ---
 layout: page
-title: HW1 CMPT231
-subtitle:
+title: "HW1: CMPT231"
 ---
 
 ### Submitting:

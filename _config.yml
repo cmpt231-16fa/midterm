@@ -37,6 +37,7 @@ navbar-links:
 author:
   name: Sean Ho
   email: "twu@seanho.com"
+  github: cmpt231-16fa
  
 # Select which links to show in the footer
 footer-links-active:
