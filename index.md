@@ -1,6 +1,7 @@
 ---
 layout: page
-title: "HW1: ch1-3"
+title: "HW1: CMPT231"
+subtitle: Lecture 1, ch1-3
 ---
 
 ### Submitting:
