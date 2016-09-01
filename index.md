@@ -12,4 +12,4 @@ ext-js: "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_CHTML"
 `[ 35, 50, 44, 61, 17, 75, 23, 9 ]`
 2. *(5pts)* Demonstrate **merge sort** on the same array.
 3. *(5pts)* CLRS #2-2: prove correctness of bubble sort.
-4. *(5pts)* Prove or disprove: `2^(2n) in O(2^n)`.
+4. *(5pts)* Prove or disprove: \`2^(2n) in O(2^n)\`.
