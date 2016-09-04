@@ -11,5 +11,5 @@ ext-js: "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_CHTML"
 1. *(5pts)* Demonstrate **insertion sort** on the following array of integers:
 `[ 35, 50, 44, 61, 17, 75, 23, 9 ]`
 2. *(5pts)* Demonstrate **merge sort** on the same array.
-3. *(5pts)* Prove: \` 8^n + n^8 in Theta( (2^n)^3 ) \`
+3. *(5pts)* Prove: \` n^3 (2 + sin(n pi / 8)) + n^2 in Theta( n^3 ) \`
 4. *(5pts)*
