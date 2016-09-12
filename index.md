@@ -13,11 +13,10 @@ ext-js: "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_CHTML"
   Show as much work as you can.
   `[ 35, 50, 44, 61, 17, 75, 23, 9 ]`
 
-2. *(4pts)* **Prove** from definition of &Theta;:
+2. *(4pts)* **Prove** from the definition of Theta:
   \` n^3 (2 + sin(n pi / 8)) + n^2 in Theta( n^3 ) \`
 
 3. Consider the following (pseudo)code:
-
 ```
 def fib(n):
   if (n <= 0):
@@ -36,11 +35,14 @@ def fib(n):
     You can use pseudocode, Python, whatever you like.
 
 4. Consider a group of n people.
+
   a. *(2pts)* If each person needs to shake hands with every other person
     in the group exactly once, how many **hand shakes** will there be total?
     Compute exactly, as a function of n.
+
   b. *(1pt)* Express (a) in &Theta; **asymptotic** notation.
     Is this linear, quadratic, exponential, or other?
+
   c. *(3pt)* In 2011 [Facebook users had on average 190 friends](https://www.facebook.com/notes/facebook-data-science/anatomy-of-facebook/10150388519243859/).
     For each user in a group of n users, say you want to find that user's
     **oldest Facebook friend**; i.e., the person with which that user has
@@ -53,6 +55,7 @@ def fib(n):
     Discuss how you might **design** such a function,
     and what its asymptotic **running time** would be.
     Is it linear, quadratic, exponential, or other?
+
   d. *(1pt)* What's **different** about the situations in parts (b) and (c)
     that explains their different asymptotic running times?
 
