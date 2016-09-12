@@ -19,32 +19,32 @@ ext-js: "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_CHTML"
 3. Consider the following (pseudo)code:
 
     ```
-    def fib(n):
-      if (n <= 0):
-        return 0
-      if (n == 1):
-        return 1
-      return fib(n-2) + fib(n-1)
+def fib(n):
+  if (n <= 0):
+    return 0
+  if (n == 1):
+    return 1
+  return fib(n-2) + fib(n-1)
     ```
 
-  a. *(3pts)* Derive and simplify the asymptotic **running time** T(n),
+  + a. *(3pts)* Derive and simplify the asymptotic **running time** T(n),
     in &Theta; notation.
 
-  b. *(1pt)* Is this function **polynomial** time, **exponential** time, or other?
+  + b. *(1pt)* Is this function **polynomial** time, **exponential** time, or other?
 
-  c. *(1pts)* **Re-write** this function to run in O(1) time.
+  + c. *(1pts)* **Re-write** this function to run in O(1) time.
     You can use pseudocode, Python, whatever you like.
 
 4. Consider a group of n people.
 
-  a. *(2pts)* If each person needs to shake hands with every other person
+  + a. *(2pts)* If each person needs to shake hands with every other person
     in the group exactly once, how many **hand shakes** will there be total?
     Compute exactly, as a function of n.
 
-  b. *(1pt)* Express (a) in &Theta; **asymptotic** notation.
+  + b. *(1pt)* Express (a) in &Theta; **asymptotic** notation.
     Is this linear, quadratic, exponential, or other?
 
-  c. *(3pt)* In 2011 [Facebook users had on average 190 friends](https://www.facebook.com/notes/facebook-data-science/anatomy-of-facebook/10150388519243859/).
+  + c. *(3pt)* In 2011 [Facebook users had on average 190 friends](https://www.facebook.com/notes/facebook-data-science/anatomy-of-facebook/10150388519243859/).
     For each user in a group of n users, say you want to find that user's
     **oldest Facebook friend**; i.e., the person with which that user has
     been Facebook friends for the longest time.
@@ -57,6 +57,6 @@ ext-js: "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_CHTML"
     and what its asymptotic **running time** would be.
     Is it linear, quadratic, exponential, or other?
 
-  d. *(1pt)* What's **different** about the situations in parts (b) and (c)
+  + d. *(1pt)* What's **different** about the situations in parts (b) and (c)
     that explains their different asymptotic running times?
 
