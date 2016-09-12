@@ -17,6 +17,7 @@ ext-js: "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_CHTML"
   \` n^3 (2 + sin(n pi / 8)) + n^2 in Theta( n^3 ) \`
 
 3. Consider the following (pseudo)code:
+
 ```
 def fib(n):
   if (n <= 0):
@@ -25,34 +26,33 @@ def fib(n):
     return 1
   return fib(n-2) + fib(n-1)
 ```
+
   a. *(3pts)* Derive and simplify the asymptotic **running time** T(n),
-     in &Theta; notation.
+    in &Theta; notation.
+
   b. *(1pt)* Is this function **polynomial** time, **exponential** time, or other?
+
   c. *(1pts)* **Re-write** this function to run in O(1) time.
-     You can use pseudocode, Python, whatever you like.
+    You can use pseudocode, Python, whatever you like.
 
 4. Consider a group of n people.
-
   a. *(2pts)* If each person needs to shake hands with every other person
-     in the group exactly once, how many **hand shakes** will there be total?
-     Compute exactly, as a function of n.
-
-  b. *(1pt)* Express in &Theta; **asymptotic** notation.
-     Is this linear, quadratic, exponential, or other?
-
+    in the group exactly once, how many **hand shakes** will there be total?
+    Compute exactly, as a function of n.
+  b. *(1pt)* Express (a) in &Theta; **asymptotic** notation.
+    Is this linear, quadratic, exponential, or other?
   c. *(3pt)* In 2011 [Facebook users had on average 190 friends](https://www.facebook.com/notes/facebook-data-science/anatomy-of-facebook/10150388519243859/).
-     For each user in a group of n users, say you want to find that user's
-     **oldest Facebook friend**; i.e., the person with which that user has
-     been Facebook friends for the longest time.
+    For each user in a group of n users, say you want to find that user's
+    **oldest Facebook friend**; i.e., the person with which that user has
+    been Facebook friends for the longest time.
 
-     The **input** would be a list of n user IDs.
-     The **output** should be a list of n user IDs, where the i-th user
-     in the output is the oldest friend for the i-th user in the input.
+    The **input** would be a list of n user IDs.
+    The **output** should be a list of n user IDs, where the i-th user
+    in the output is the oldest friend for the i-th user in the input.
 
-     Discuss how you might **design** such a function,
-     and what its asymptotic **running time** would be.
-     Is it linear, quadratic, exponential, or other?
-
+    Discuss how you might **design** such a function,
+    and what its asymptotic **running time** would be.
+    Is it linear, quadratic, exponential, or other?
   d. *(1pt)* What's **different** about the situations in parts (b) and (c)
-     that explains their different asymptotic running times?
+    that explains their different asymptotic running times?
 
