@@ -17,14 +17,15 @@ ext-js: "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_CHTML"
   \` n^3 (2 + sin(n pi / 8)) + n^2 in Theta( n^3 ) \`
 
 3. Consider the following (pseudo)code:
-```
-def fib(n):
-  if (n <= 0):
-    return 0
-  if (n == 1):
-    return 1
-  return fib(n-2) + fib(n-1)
-```
+
+    ```
+    def fib(n):
+      if (n <= 0):
+        return 0
+      if (n == 1):
+        return 1
+      return fib(n-2) + fib(n-1)
+    ```
 
   a. *(3pts)* Derive and simplify the asymptotic **running time** T(n),
     in &Theta; notation.
