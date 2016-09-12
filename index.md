@@ -17,7 +17,6 @@ ext-js: "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_CHTML"
   \` n^3 (2 + sin(n pi / 8)) + n^2 in Theta( n^3 ) \`
 
 3. Consider the (pseudo)code given at the end of this question.
-
   + a. *(3pts)* Derive and simplify its asymptotic **running time** T(n),
     in &Theta; notation.
   + b. *(1pt)* Is this function **polynomial** time, **exponential** time, or other?
