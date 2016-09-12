@@ -16,20 +16,19 @@ ext-js: "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_CHTML"
 2. *(4pts)* **Prove** from the definition of Theta:
   \` n^3 (2 + sin(n pi / 8)) + n^2 in Theta( n^3 ) \`
 
-3. Consider the following (pseudo)code:
-
-        def fib(n):
-          if (n <= 0):
-            return 0
-          if (n == 1):
-            return 1
-          return fib(n-2) + fib(n-1)
-
-  + a. *(3pts)* Derive and simplify the asymptotic **running time** T(n),
+3. Consider the (pseudo)code given at the end of this question.
+  + a. *(3pts)* Derive and simplify its asymptotic **running time** T(n),
     in &Theta; notation.
   + b. *(1pt)* Is this function **polynomial** time, **exponential** time, or other?
   + c. *(1pts)* **Re-write** this function to run in O(1) time.
     You can use pseudocode, Python, whatever you like.
+
+            def fib(n):
+              if (n <= 0):
+                return 0
+              if (n == 1):
+                return 1
+              return fib(n-2) + fib(n-1)
 
 4. Consider a group of n people.
 
