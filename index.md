@@ -18,20 +18,16 @@ ext-js: "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_CHTML"
 
 3. Consider the following (pseudo)code:
 
-    ```
-def fib(n):
-  if (n <= 0):
-    return 0
-  if (n == 1):
-    return 1
-  return fib(n-2) + fib(n-1)
-    ```
+        def fib(n):
+          if (n <= 0):
+            return 0
+          if (n == 1):
+            return 1
+          return fib(n-2) + fib(n-1)
 
   + a. *(3pts)* Derive and simplify the asymptotic **running time** T(n),
     in &Theta; notation.
-
   + b. *(1pt)* Is this function **polynomial** time, **exponential** time, or other?
-
   + c. *(1pts)* **Re-write** this function to run in O(1) time.
     You can use pseudocode, Python, whatever you like.
 
