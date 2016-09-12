@@ -17,8 +17,8 @@ ext-js: "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_CHTML"
   \` n^3 (2 + sin(n pi / 8)) + n^2 in Theta( n^3 ) \`
 
 3. Consider the (pseudo)code given at the end of this question.
-  + a. *(3pts)* Derive and simplify its asymptotic **running time** T(n),
-    in &Theta; notation.
+  + a. *(3pts)* Derive and simplify its **asymptotic complexity** T(n),
+    in &Theta; notation, as a function of n.
   + b. *(1pt)* Is this function **polynomial** time, **exponential** time, or other?
   + c. *(1pts)* **Re-write** this function to run in O(1) time.
     You can use pseudocode, Python, whatever you like.
@@ -49,9 +49,9 @@ ext-js: "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_CHTML"
     in the output is the oldest friend for the i-th user in the input.
 
     Discuss how you might **design** such a function,
-    and what its asymptotic **running time** would be.
+    and what its **asymptotic complexity** would be, as a function of n.
     Is it linear, quadratic, exponential, or other?
 
   + d. *(1pt)* What's **different** about the situations in parts (b) and (c)
-    that explains their different asymptotic running times?
+    that explains their different asymptotic complexities?
 
