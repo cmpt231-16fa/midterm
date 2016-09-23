@@ -7,7 +7,7 @@ ext-js: "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_CHTML"
 
 {% include policies.md %}
 
-### HW1 (20pts)
+### HW1 (20pts) [(solutions)](solns)
 
 1. *(4pts)* Demonstrate **insertion sort** on the following array of integers.
   Show as much work as you can.
