@@ -48,11 +48,11 @@ ext-js: "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_CHTML"
 
             def fib(n):
               phi = 1.61803...
-              return phi ** n // or pow(phi, n), etc.
+              return phi ** n		# or pow(phi, n), etc.
 
 + 4. a. *(2pts)* how many **hand shakes**?
 
-  \` n(n+1)/2 \`
+  \` (n(n+1))/2 \`
 
   + b. *(1pt)* Express (a) in &Theta; **asymptotic** notation.
     Is this linear, quadratic, exponential, or other?
