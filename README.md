@@ -1,1 +1,1 @@
-# HW1 [CMPT231 16FA](https://cmpt231-16fa.github.io/)
+# Midterm Exam [CMPT231 16FA](https://cmpt231-16fa.github.io/)
