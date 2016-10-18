@@ -5,13 +5,16 @@ ext-js: "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_CHTML"
 ---
 
 ### Policies
++ Tue 25 Oct, 13:10 - 14:30
 + Allowed:
   + Paper copy of textbook
   + Paper notes, printed or handwritten
   + Please bring your own blank white 8.5x11" paper
 + Not allowed:
-  + Use of computers (all screens off)
+  + Use of electronics, computers, etc. (all screens off)
   + Use of mobile phone (off/mute and in pocket/bag)
++ If you feel a question is ambiguous, write on your exam sheet
+  your interpretation of the question, and answer accordingly.
 
 ### Midterm Exam (60pts)
 
