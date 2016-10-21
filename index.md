@@ -19,7 +19,7 @@ ext-js: "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_CHTML"
 ### Midterm Exam (60pts)
 
 1. *(5pts)* : ch2-3: insertion sort, definition of &Theta;/O/&Omega;/o/&omega;,
-  working with logs, log\*, iterated functions, Fibonacci
+  working with logs, log\*, iterated functions \`(log^((i)))\`, Fibonacci
 
 1. *(5pts)* : ch4: merge sort, solving recurrences, master method, max-subarray
 
