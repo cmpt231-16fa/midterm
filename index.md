@@ -18,24 +18,26 @@ ext-js: "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_CHTML"
 
 ### Midterm Exam (60pts)
 
-1. *(5pts)* : ch2-3: insertion sort, definition of &Theta;/O/&Omega;/o/&omega;,
+1. *(~12pts)* : **Lecture 1**: <br/>
+  **ch2-3**: insertion sort, definition of &Theta;/O/&Omega;/o/&omega;,
   working with logs, log\*, iterated functions \`(log^((i)))\`, Fibonacci
 
-1. *(5pts)* : ch4: merge sort, solving recurrences, master method, max-subarray
+1. *(~12pts)* : **Lecture 2**: <br/>
+  **ch4**: merge sort, solving recurrences, master method, max-subarray <br/>
+  **ch5**: randomised algorithms (no proofs)
 
-1. *(5pts)* : ch5: randomised algorithms (no proofs)
+1. *(~12pts)* : **Lecture 3**: <br/>
+  **ch6**: max-heaps and heap sort, priority queue <br/>
+  **ch7**: quick sort (e.g., perhaps with a different partition strategy)
 
-1. *(5pts)* : ch6: max-heaps and heap sort, priority queue
-
-1. *(5pts)* : ch7: quick sort (e.g., perhaps with a different partition strategy)
-
-1. *(5pts)* : ch8: counting sort, radix (with different bases), bucket
-
-1. *(5pts)* : ch11: hash tables: chaining vs open address, load factor, 
+1. *(~12pts)* : **Lecture 4**: <br/>
+  **ch8**: counting sort, radix (with different bases), bucket <br/>
+  **ch11**: hash tables: chaining vs open address, load factor, 
   properties of a good hash function, div/mul hash,
   linear/quadratic/double probe
 
-1. *(5pts)* : ch10: implementing and using linked lists, stacks, queues
-
-1. *(5pts)* : ch12: binary search trees, tree traversals, predecessor/successor,
+1. *(~12pts)* : **Lecture 5**: <br/>
+  **ch10**: implementing and using linked lists, stacks, queues <br/>
+  **ch12**: binary search trees, tree traversals, predecessor/successor,
   insert/delete
+
