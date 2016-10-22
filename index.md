@@ -18,26 +18,38 @@ ext-js: "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_CHTML"
 
 ### Midterm Exam (60pts)
 
-1. *(~12pts)* : **Lecture 1**: <br/>
+1. *(~3pts)* : **Lecture 1**: <br/>
   **ch2-3**: insertion sort, definition of &Theta;/O/&Omega;/o/&omega;,
   working with logs, log\*, iterated functions \`(log^((i)))\`, Fibonacci
 
-1. *(~12pts)* : **Lecture 2**: <br/>
+1. *(~3pts)* : **Lecture 1**
+
+1. *(~6pts)* : **Lecture 1**
+
+1. *(~4pts)* : **Lecture 2**: <br/>
   **ch4**: merge sort, solving recurrences, master method, max-subarray <br/>
   **ch5**: randomised algorithms (no proofs)
 
-1. *(~12pts)* : **Lecture 3**: <br/>
+1. *(~6pts)* : **Lecture 2**
+
+1. *(~4pts)* : **Lecture 3**: <br/>
   **ch6**: max-heaps and heap sort, priority queue <br/>
   **ch7**: quick sort (e.g., perhaps with a different partition strategy)
 
-1. *(~12pts)* : **Lecture 4**: <br/>
+1. *(~8pts)* : **Lecture 3**
+
+1. *(~6pts)* : **Lecture 4**: <br/>
   **ch8**: counting sort, radix (with different bases), bucket <br/>
   **ch11**: hash tables: chaining vs open address, load factor, 
   properties of a good hash function, div/mul hash,
   linear/quadratic/double probe
 
-1. *(~12pts)* : **Lecture 5**: <br/>
+1. *(~6pts)* : **Lecture 4**
+
+1. *(~4pts)* : **Lecture 5**: <br/>
   **ch10**: implementing and using linked lists, stacks, queues <br/>
   **ch12**: binary search trees, tree traversals, predecessor/successor,
   insert/delete
+
+1. *(~10pts)* : **Lecture 5**
 
