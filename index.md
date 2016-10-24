@@ -15,6 +15,8 @@ ext-js: "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_CHTML"
   + Use of mobile phone (off/mute and in pocket/bag)
 + If you feel a question is ambiguous, write on your exam sheet
   your interpretation of the question, and answer accordingly.
++ Please label/number your pages clearly and staple them in order
+when handing in.
 
 ### Midterm Exam (60pts)
 
@@ -22,21 +24,19 @@ ext-js: "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_CHTML"
   **ch2-3**: insertion sort, definition of &Theta;/O/&Omega;/o/&omega;,
   working with logs, log\*, iterated functions \`(log^((i)))\`, Fibonacci
 
-1. *(~3pts)* : **Lecture 1**
+1. *(~4pts)* : **Lecture 1**
 
 1. *(~6pts)* : **Lecture 1**
 
-1. *(~4pts)* : **Lecture 2**: <br/>
+1. *(~6pts)* : **Lecture 2**: <br/>
   **ch4**: merge sort, solving recurrences, master method, max-subarray <br/>
   **ch5**: randomised algorithms (no proofs)
 
-1. *(~6pts)* : **Lecture 2**
+1. *(~5pts)* : **Lecture 2**
 
-1. *(~4pts)* : **Lecture 3**: <br/>
+1. *(~8pts)* : **Lecture 3**: <br/>
   **ch6**: max-heaps and heap sort, priority queue <br/>
   **ch7**: quick sort (e.g., perhaps with a different partition strategy)
-
-1. *(~8pts)* : **Lecture 3**
 
 1. *(~6pts)* : **Lecture 4**: <br/>
   **ch8**: counting sort, radix (with different bases), bucket <br/>
@@ -44,12 +44,12 @@ ext-js: "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_CHTML"
   properties of a good hash function, div/mul hash,
   linear/quadratic/double probe
 
-1. *(~6pts)* : **Lecture 4**
+1. *(~8pts)* : **Lecture 4**
 
-1. *(~4pts)* : **Lecture 5**: <br/>
+1. *(~8pts)* : **Lecture 5**: <br/>
   **ch10**: implementing and using linked lists, stacks, queues <br/>
   **ch12**: binary search trees, tree traversals, predecessor/successor,
   insert/delete
 
-1. *(~10pts)* : **Lecture 5**
+1. *(~6pts)* : **Lecture 5**
 
