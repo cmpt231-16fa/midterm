@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Midterm Exam: CMPT231</title>
+
+  <meta name="author" content="Sean Ho" />
+  <meta name="description" content="">
+
+  <link rel="alternate" type="application/rss+xml" title="Midterm CMPT231 16FA - " href="feed.xml" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+
+  <meta property="og:title" content="Midterm Exam: CMPT231" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://cmpt231-16fa.github.io/midterm/" />
+  <meta property="og:image" content="https://cmpt231-16fa.github.io/midterm/img/TreeNetwork.svg" />
+
+</head><body>
+
+  <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://cmpt231-16fa.github.io/midterm">Midterm CMPT231 16FA</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+<a href="https://courses.mytwu.ca/course/view.php?id=33225">myCourses</a>
+        </li>
+        <li>
+<a href="https://cmpt231-16fa.github.io/">CMPT231</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+	<a href="https://cmpt231-16fa.github.io/midterm ">
+	  <img class="avatar-img" src="img/TreeNetwork.svg" />
+	</a>
+      </div>
+    </div>
+
+  </div></nav>  
+
+<header class="header-section ">
+<div class="intro-header no-img">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-heading">
+          <h1>Midterm Exam: CMPT231</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <h3 id="policies">Policies</h3>
+      <table><tbody><tr><td style="width:50%"><ul>
+  <li>Tue 25 Oct 2016, 13:10 - 14:30</li>
+  <li>Allowed:
+    <ul>
+      <li>Paper copy of textbook</li>
+      <li>Paper notes, printed or handwritten</li>
+      <li>Please bring your own blank white 8.5x11” paper</li>
+    </ul>
+  </li>
+	</ul></td><td><ul>
+  <li>Not allowed:
+    <ul>
+      <li>Use of electronics, computers, etc. (all screens off)</li>
+      <li>Use of mobile phone (off/mute and in pocket/bag)</li>
+      <li>Sharing of textbook, notes, etc.</li>
+    </ul>
+  </li>
+	</ul></td></tr></tbody></table>
+<ul>
+  <li>If you feel a question is ambiguous, write on your exam sheet
+your interpretation of the question, and answer accordingly.</li>
+  <li>Please label/number your pages clearly and staple them in order
+when handing in.</li>
+</ul>
+
+<h3 id="midterm-exam-60pts">Midterm Exam (60pts)
+	<a onClick="toggleSolns()">[###]</a></h3>
+
+<style><!--
+.soln { display:none }
+p { margin: 1em 0 }
+--></style>
+<script>
+function toggleSolns() {
+  var solns = document.getElementsByClassName('soln');
+  for (i=0; i<solns.length; i++)
+    solns[i].style.display = 
+      (window.getComputedStyle(solns[i]).display == 'none') ? 'block' : 'none';
+}
+</script>
+
+<ol>
+
+<li class="lec1"><p><em>(3pts)</em> :
+	<b>Prove</b> or <b>disprove</b>:
+	if `f in O(g(n))` and `g in O(f(n))`, then `f=g`
+</p><p class="soln"><b>Solution</b>:
+False: a counterexample is `f(n)=n` and `g(n)=2n`.
+</p></li>
+
+<li class="lec1"><p><em>(4pts)</em> :
+	<b>Prove</b>: `n^10 e^n in o(3^n)`
+</p><p class="soln"><b>Solution</b>:
+Apply log (e.g., ln) to both sides (monotonic): <br/>
+We want to show `10 ln n + n in o(n ln 3) = o(n)`. <br/>
+Use limit definition of o():
+`lim_(n->oo) (10 ln n + n)/n` = `lim_(n->oo) (10 ln n)/n + 1` = 0
+(e.g., by applying L'Hôpital's rule)
+</p></li>
+
+<li class="lec1"><p><em>(6pts)</em>:
+	<b>Prove</b> from definition:
+	`n^2 + O(n log n) = O(n^2)`
+</p><p class="soln"><b>Solution</b>:
+Let `f in O(n log n)`, i.e., let `c_0, n_0` be such that
+`forall n > n_0, f(n) <= c_0 n log n`. <br/>
+Since n > log n, we can let `n_1=n_0` and `c_1=1+c_0`, and we have
+`forall n > n_0` <br/>
+`n^2 + f(n) <= n^2 + c_0 n log n`
+`<= n^2 + c_0 n^2` `= (1+c_0)n^2 = c_1 n^2`, <br/>
+which proves the result.
+</p></li>
+
+<li class="lec2"><p><em>(6pts)</em>:
+	<b>Prove</b> by induction, for all n &ge; 1:
+	`sum_(k=1)^n k(k!) = (n+1)!-1`
+</p><p class="soln"><b>Solution</b>:
+Base case: `sum_(k=1)^1 k(k!) = 1(1!) = 1 = 2-1 = (1+1)!-1`. <br/>
+Inductive step: `sum_(k=1)^n k(k!)`
+= `n(n!)+sum_(k=1)^(n-1) k(k!)` (pulling out one term) <br/>
+= `n(n!) + (n!)-1` (by inductive hypothesis at n-1) <br/>
+= `n!(n+1)-1` (factor out n!)<br/>
+= `(n+1)!-1`.
+</p></li>
+
+<li class="lec2"><p><em>(5pts)</em>:
+	We have now learned 7 <b>sorting</b> algorithms:
+	insertion, merge, heap, quick, counting, radix, bucket.
+	For each, briefly summarise the <b>pros/cons</b>,
+	assumptions, and key features.
+</p><p class="soln"><b>Solution</b>: <br/>
+<b>Insertion</b>: Easy to code, fast on "approximately sorted" input, but
+  average case slow `Theta(n^2)` <br/>
+<b>Merge</b>: Always &Theta;(n lg n), but requires copying <br/>
+<b>Heap</b>: Also &Theta;(n lg n), but often more swaps than Quicksort <br/>
+<b>Quick</b>: Average/random case &Theta;(n lg n), worst case
+  `Theta(n^2)`, few swaps on real-world input<br/>
+<b>Counting</b>: Assumes items can only take on a small number k of values.
+  Out-of-place but stable.  &Theta;(n+k)<br/>
+<b>Radix</b>: Assumes items can be split into digits.  Depends on
+  a fast, stable sort like counting sort.  &Theta;(d(n+k)), depends
+  on choice of radix (i.e., how to split into digits)<br/>
+<b>Bucket</b>: Assumes values uniformly distributed in [0,1)
+</p></li>
+
+<li class="lec3"><p><em>(8pts)</em>:
+	Demonstrate <b>QuickSort</b> (Lomuto
+	partitioning, non-randomised) on the following input:
+	<code>[ M T K D S F G L ]</code>.
+	How many (non-trivial) swaps?
+</p><p class="soln"><b>Solution</b>:
+Each line is just after a non-trivial swap (9 total).
+<table class="soln"><tbody>
+<tr><th>lo</th><th>hi</th><th>piv</th><th>spl</th><th>cur</th>
+    <td>M</td><td>T</td><td>K</td><td>D</td>
+    <td>S</td><td>F</td><td>G</td><td>L</td></tr>
+<tr><td>1</td><td>8</td><td>L</td><td>1</td><td>3</td>
+    <td>K</td><td>T</td><td>M</td><td>D</td>
+    <td>S</td><td>F</td><td>G</td><td>L</td></tr>
+<tr><td>1</td><td>8</td><td>L</td><td>2</td><td>4</td>
+    <td>K</td><td>D</td><td>M</td><td>T</td>
+    <td>S</td><td>F</td><td>G</td><td>L</td></tr>
+<tr><td>1</td><td>8</td><td>L</td><td>3</td><td>6</td>
+    <td>K</td><td>D</td><td>F</td><td>T</td>
+    <td>S</td><td>M</td><td>G</td><td>L</td></tr>
+<tr><td>1</td><td>8</td><td>L</td><td>4</td><td>7</td>
+    <td>K</td><td>D</td><td>F</td><td>G</td>
+    <td>S</td><td>M</td><td>T</td><td>L</td></tr>
+<tr><td>1</td><td>8</td><td>L</td><td>5</td><td>-</td>
+    <td>K</td><td>D</td><td>F</td><td>G</td>
+    <td>L</td><td>M</td><td>T</td><td>S</td></tr>
+<tr><td>1</td><td>4</td><td>G</td><td>1</td><td>2</td>
+    <td>D</td><td>K</td><td>F</td><td>G</td>
+    <td>L</td><td>M</td><td>T</td><td>S</td></tr>
+<tr><td>1</td><td>4</td><td>G</td><td>2</td><td>3</td>
+    <td>D</td><td>F</td><td>K</td><td>G</td>
+    <td>L</td><td>M</td><td>T</td><td>S</td></tr>
+<tr><td>1</td><td>4</td><td>G</td><td>3</td><td>-</td>
+    <td>D</td><td>F</td><td>G</td><td>K</td>
+    <td>L</td><td>M</td><td>T</td><td>S</td></tr>
+<tr><td>6</td><td>8</td><td>S</td><td>7</td><td>-</td>
+    <td>D</td><td>F</td><td>G</td><td>K</td>
+    <td>L</td><td>M</td><td>S</td><td>T</td></tr>
+</tbody></table>
+</p></li>
+
+<li class="lec4"><p><em>(6pts)</em>:
+	Consider an array of 2D <b>points</b> `{(x_i, y_i)}_(i=1)^n`
+	uniformly distributed within the <b>unit disk</b>
+	(i.e., inside the circle of radius 1 centered at (0,0)). <br/>
+	<b>Describe</b> in words how you might
+	efficiently sort this array in increasing order 
+	of <b>distance</b> from the origin (0,0).
+</p><p class="soln"><b>Solution</b>:
+The critical thing to notice is that the points are <b>not</b>
+uniformly distributed in terms of distance from the origin. <br/><br/>
+One way to see this is by considering annular rings of fixed width
+<em>dr</em>,
+e.g., `{(x,y): r < sqrt(x^2+y^2) < r+dr}`.  The area of the ring
+is `pi(r+dr)^2-pi r^2` = `2pi r dr + pi (dr)^2`, which increases
+linearly with <em>r</em>. <br/><br/>
+From this, we can see that if we use the <b>square</b> of the distance
+as the key to determine buckets, rather than just the distance, then
+it is equivalent to dividing the unit disk into annular rings of
+equal area: <br/>
+Each ring is `{(x,y): h < x^2+y^2 < h+dh}`
+       = `{(x,y): sqrt(h) < sqrt(x^2+y^2) < sqrt(h+dh)}`. <br/>
+The area of each ring is `pi(sqrt(h+dh))^2 - pi(sqrt(h))^2`
+= `pi(r+dr) - pi(r)` = `pi dr`, which is constant. <br/><br/>
+So the solution is to use bucket sort on the square of the distance
+from the origin.
+</p></li>
+
+<li class="lec4"><p><em>(8pts)</em>:
+	Demonstrate inserting the input
+	<code>[ 7, 11, 16, 22, 36 ]</code>
+	into a <b>hash-table</b> of size m=5, using<ul>
+	<li> (a) <b>division</b> hash, </li>
+	<li> (b) division hash and <b>linear</b> probing, and</li>
+	<li> (c) division hash and <b>quadratic</b> probing with 
+	`c_1=0.5, c_2=2.5` (round the result down).</li>
+	</ul>
+</p><p class="soln">
+<table class="soln"><tbody>
+<tr><th>bkt:</th><th> 0</th><th> 1</th><th> 2</th><th> 3</th><th> 4</th></tr>
+<tr><th>key:</th><td> 7</td><td>11</td><td>16</td><td>22</td><td>36</td></tr>
+<tr><th>mod5</th><td> 2</td><td> 1</td><td> 1</td><td> 2</td><td> 1</td></tr>
+<tr><th>div </th><td> -</td><td>11</td><td> 7</td><td> -</td><td> -</td></tr>
+<tr><th>  - </th><td> -</td><td>16</td><td>22</td><td> -</td><td> -</td></tr>
+<tr><th>  - </th><td> -</td><td>36</td><td> -</td><td> -</td><td> -</td></tr>
+<tr><th>lin </th><td>36</td><td>11</td><td> 7</td><td>16</td><td>22</td></tr>
+<tr><th>quad</th><td>22</td><td>11</td><td> 7</td><td>36</td><td>16</td></tr>
+</tbody></table>
+</p></li>
+
+<li class="lec5"><p><em>(8pts)</em>:
+	Identify the <b>problem</b>(s) in the following
+	pseudocode for <b>deleting</b> a node from a singly-linked list. <br/>
+	<b>Fix</b> it (i.e, rewrite <code>delete()</code>).
+	Assume reasonable class definitions of LinkedList and Node.
+<pre>
+class LinkedList:
+  def delete( self, key ):
+    node = self.search( key )
+    if (!node): return			# key not in list
+    if node == self.head:
+      self.head = node.next
+    del node
+</pre>
+</p><p class="soln"><b>Solution</b>:
+The <code>next</code> pointer in the previous node needs to be updated
+to skip over the node to be deleted.  But since we are a singly-linked
+list and <code>search</code> brought us too far already, we can't do that.
+We need to extend the code for <code>search</code>:</p>
+<pre class="soln">
+def delete( self, key ):
+  if self.head == None: return		# empty list
+  if key == self.head.key:		# del head
+    cur = self.head
+    self.head = cur.next
+    del cur
+    return
+  prev = self.head			# search for key
+  cur = prev.next
+  while cur != None:
+    if cur.key == key:			# del cur node
+      prev.next = cur.next
+      del cur
+      return
+    prev = cur
+    cur = cur.next
+</pre>
+</li>
+
+<li class="lec5"><p><em>(6pts)</em>:
+	Reconstruct the <b>binary search tree</b> whose
+	<b>post-order</b> traversal is
+	<code>D H M K F T X V R Y Q</code>.
+</p><p class="soln"><b>Solution</b>:
+<img src="img/bst-postorder.svg" style="width:100%" />
+</p></li>
+
+<!--
+<li class="lec"><p><em>(4pts)</em> : 
+</p><p class="soln"><b>Solution</b>:
+</p></li>
+-->
+
+</ol>
+
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_CHTML"></script>
+<script>
+if (typeof jQuery == 'undefined') {
+  document.write('<script src="js/jquery-1.11.2.min.js"></scr' + 'ipt>');
+}
+</script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+
+</body></html>
